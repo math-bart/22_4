@@ -6,12 +6,14 @@ export default {
     switchLanguage: 'Changer de langue',
     twitterMessage: 'Nous sommes sur Twitter',
     by: 'Par',
+	votes: 'Do You like it? :',
     deletePost: 'Supprimer le message',
     createNewPost: 'Créer un nouveau message',
     authorName: 'Nom de l\'auteur',
     postTitle: 'Titre de l\'article',
     postContent: 'Contenu après',
     submit: 'Soumettre',
+	editPost: 'Edit Post',
     comment: `user {name} {value, plural,
     	  =0 {does not have any comments}
     	  =1 {has # comment}
