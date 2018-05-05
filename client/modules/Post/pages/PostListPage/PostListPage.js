@@ -28,8 +28,8 @@ class PostListPage extends Component {
     this.props.dispatch(toggleAddPost());
     this.props.dispatch(addPostRequest({ name, title, content, votes }));
   };
-  
-   handleThumbUp = (cuid, votes) => {
+
+  handleThumbUp = (cuid, votes) => {
     const newVotes = votes + 1;
     this.props.dispatch(thumbUpRequest(cuid, newVotes));
   }
@@ -43,12 +43,12 @@ class PostListPage extends Component {
     return (
       <div>
         <PostCreateWidget addPost={this.handleAddPost} showAddPost={this.props.showAddPost} />
-        <PostList 
-		  handleDeletePost={this.handleDeletePost} 
-		  posts={this.props.posts} 
-		  handleThumbUp={this.handleThumbUp} 
-		  handleThumbDown={this.handleThumbDown} 
-		/>
+        <PostList
+          handleDeletePost={this.handleDeletePost}
+          posts={this.props.posts}
+          handleThumbUp={this.handleThumbUp}
+          handleThumbDown={this.handleThumbDown}
+        />
       </div>
     );
   }
@@ -70,7 +70,7 @@ PostListPage.propTypes = {
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
-	votes: PropTypes.number.isRequired,
+    votes: PropTypes.number.isRequired,
   })).isRequired,
   showAddPost: PropTypes.bool.isRequired,
   dispatch: PropTypes.func.isRequired,

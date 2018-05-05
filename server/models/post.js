@@ -11,4 +11,5 @@ const postSchema = new Schema({
   dateAdded: { type: 'Date', default: Date.now, required: true },
 });
 
+
 export default mongoose.model('Post', postSchema);
